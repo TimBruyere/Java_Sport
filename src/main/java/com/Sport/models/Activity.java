@@ -1,9 +1,8 @@
-package com.dercraker.models;
+package com.Sport.models;
 
 import org.bson.types.ObjectId;
 
 import java.sql.Date;
-import java.util.UUID;
 
 public class Activity {
     private ObjectId ActivityId;

@@ -1,4 +1,4 @@
-package com.dercraker.Dto;
+package com.Sport.Dto;
 
 import java.sql.Date;
 

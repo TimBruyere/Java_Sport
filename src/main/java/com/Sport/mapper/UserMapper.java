@@ -1,9 +1,7 @@
-package com.dercraker.mapper;
+package com.Sport.mapper;
 
-import com.dercraker.models.UserInformation;
+import com.Sport.models.UserInformation;
 import org.bson.Document;
-
-import java.security.PublicKey;
 
 public class UserMapper {
     public static Document UserToDocument(UserInformation user){

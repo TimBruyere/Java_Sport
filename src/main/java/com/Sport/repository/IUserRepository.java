@@ -1,8 +1,6 @@
-package com.dercraker.repository;
+package com.Sport.repository;
 
-import com.dercraker.Dto.UpdateUserDto;
-import com.dercraker.models.UserInformation;
-import com.mongodb.client.model.DeleteOneModel;
+import com.Sport.models.UserInformation;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.InsertOneResult;
 

@@ -1,17 +1,13 @@
-package com.dercraker.repository;
+package com.Sport.repository;
 
-import com.dercraker.Dto.UpdateUserDto;
-import com.dercraker.mapper.UserMapper;
-import com.dercraker.models.UserInformation;
+import com.Sport.models.UserInformation;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.InsertOneResult;
 import org.bson.Document;
 
-import java.sql.Date;
-
-import static com.dercraker.mapper.UserMapper.DocumentToUser;
-import static com.dercraker.mapper.UserMapper.UserToDocument;
+import static com.Sport.mapper.UserMapper.DocumentToUser;
+import static com.Sport.mapper.UserMapper.UserToDocument;
 
 public class UserRepository implements IUserRepository {
 

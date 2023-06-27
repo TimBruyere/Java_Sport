@@ -1,9 +1,8 @@
-package com.dercraker;
+package com.Sport;
 
-import com.dercraker.models.Activity;
-import com.dercraker.models.UserInformation;
-import com.dercraker.repository.ActivityRepository;
-import com.dercraker.repository.UserRepository;
+import com.Sport.models.UserInformation;
+import com.Sport.repository.ActivityRepository;
+import com.Sport.repository.UserRepository;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
@@ -12,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Date;
-import java.util.*;
 
 public class Main {
     private static Logger logger = LoggerFactory.getLogger(Main.class);
@@ -32,7 +30,7 @@ public class Main {
 //            activityRepository.Add(new Activity("Velo", dateNow, 6D, 30L, 60D));
 
             UserInformation user = userRepository.GetUserInformation();
-            System.out.println(user["name"]);
+            System.out.println(user);
 //            userRepository.Delete(user);
 //            user = userRepository.GetUserInformation();
         }

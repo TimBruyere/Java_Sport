@@ -1,6 +1,6 @@
-package com.dercraker.mapper;
+package com.Sport.mapper;
 
-import com.dercraker.models.Activity;
+import com.Sport.models.Activity;
 import org.bson.Document;
 
 public class ActivityRepository {

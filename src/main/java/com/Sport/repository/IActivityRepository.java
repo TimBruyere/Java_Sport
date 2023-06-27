@@ -1,6 +1,6 @@
-package com.dercraker.repository;
+package com.Sport.repository;
 
-import com.dercraker.models.Activity;
+import com.Sport.models.Activity;
 import com.mongodb.client.result.InsertOneResult;
 
 public interface IActivityRepository {

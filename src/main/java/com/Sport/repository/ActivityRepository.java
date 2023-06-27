@@ -1,11 +1,11 @@
-package com.dercraker.repository;
+package com.Sport.repository;
 
-import com.dercraker.models.Activity;
+import com.Sport.models.Activity;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.InsertOneResult;
 import org.bson.Document;
 
-import static com.dercraker.mapper.ActivityRepository.ActivityToDocument;
+import static com.Sport.mapper.ActivityRepository.ActivityToDocument;
 
 public class ActivityRepository implements IActivityRepository {
     private MongoCollection<Document> Collection;
