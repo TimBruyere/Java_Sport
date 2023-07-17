@@ -1,5 +1,6 @@
 package com.Sport;
 
+import com.Sport.ViewWindow.FenetreAccueil;
 import com.Sport.models.UserInformation;
 import com.Sport.models.Activity;
 import com.Sport.repository.ActivityRepository;
@@ -12,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.swing.*;
 import java.sql.Date;
 import java.time.LocalDate;
 
@@ -19,7 +21,6 @@ import java.time.LocalDate;
 public class Main {
     private static Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
-        String connectionString = "";
         Dotenv dotenv = null;
         dotenv = Dotenv.configure().load();
 
@@ -41,6 +42,9 @@ public class Main {
 
 //            userRepository.Delete(user);
 //            user = userRepository.GetUserInformation();
+
+
         }
     }
+    JFrame frame = new FenetreAccueil();
 }
