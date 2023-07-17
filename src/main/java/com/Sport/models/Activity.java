@@ -2,17 +2,20 @@ package com.Sport.models;
 
 import org.bson.types.ObjectId;
 
-import java.sql.Date;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class Activity {
     private ObjectId ActivityId;
     private String Name;
-    private Date ActivityDate;
+    private LocalDate ActivityDate;
     private Double RPE;
     private Long Duration;
     private Double Charge;
 
-    public Activity(String name, Date activityDate, Double RPE, Long duration, Double charge) {
+    public Activity(){}
+
+    public Activity(String name, LocalDate activityDate, Double RPE, Long duration, Double charge) {
         Name = name;
         ActivityDate = activityDate;
         this.RPE = RPE;
@@ -20,7 +23,7 @@ public class Activity {
         Charge = charge;
     }
 
-    public Activity(ObjectId activityId, String name, Date activityDate, Double RPE, Long duration, Double charge) {
+    public Activity(ObjectId activityId, String name, LocalDate activityDate, Double RPE, Long duration, Double charge) {
         ActivityId = activityId;
         Name = name;
         ActivityDate = activityDate;
@@ -45,11 +48,11 @@ public class Activity {
         Name = name;
     }
 
-    public Date getActivityDate() {
+    public LocalDate getActivityDate() {
         return ActivityDate;
     }
 
-    public void setActivityDate(Date activityDate) {
+    public void setActivityDate(LocalDate activityDate) {
         ActivityDate = activityDate;
     }
 

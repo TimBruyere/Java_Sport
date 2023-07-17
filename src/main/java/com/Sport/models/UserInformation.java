@@ -2,6 +2,7 @@ package com.Sport.models;
 
 import org.bson.types.ObjectId;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -9,14 +10,14 @@ public class UserInformation {
     private ObjectId UserId;
     private String FirstName;
     private String LastName;
-    private Date BirthDay;
+    private LocalDate BirthDay;
     private String Sex;
     private List<Activity> Activities;
 
     public UserInformation() {
     }
 
-    public UserInformation(ObjectId userId, String firstName, String lastName, Date birthDay, String sex, List<Activity> activities) {
+    public UserInformation(ObjectId userId, String firstName, String lastName, LocalDate birthDay, String sex, List<Activity> activities) {
 
         UserId = userId;
         FirstName = firstName;
@@ -26,7 +27,7 @@ public class UserInformation {
         Activities = activities;
     }
 
-    public UserInformation(String firstName, String lastName, Date birthDay, String sex) {
+    public UserInformation(String firstName, String lastName, LocalDate birthDay, String sex) {
         FirstName = firstName;
         LastName = lastName;
         BirthDay = birthDay;
@@ -57,11 +58,11 @@ public class UserInformation {
         LastName = lastName;
     }
 
-    public Date getBirthDay() {
+    public LocalDate getBirthDay() {
         return BirthDay;
     }
 
-    public void setBirthDay(Date birthDay) {
+    public void setBirthDay(LocalDate birthDay) {
         BirthDay = birthDay;
     }
 

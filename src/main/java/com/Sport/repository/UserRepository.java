@@ -4,6 +4,7 @@ import com.Sport.models.UserInformation;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.InsertOneResult;
+import com.mongodb.client.result.UpdateResult;
 import org.bson.Document;
 
 import static com.Sport.mapper.UserMapper.DocumentToUser;
@@ -32,5 +33,7 @@ public class UserRepository implements IUserRepository {
     public DeleteResult Delete(UserInformation user) {
         return Collection.deleteOne(UserToDocument(user));
     }
+
+    public UpdateResult Update(UserInformation user) { return Collection.replaceOne(new Document("_id", user.getUserId()), UserToDocument(user)); }
 
 }
