@@ -1,5 +1,6 @@
 package com.Sport;
 
+import com.Sport.ViewWindow.FenetreAccueil;
 import com.Sport.models.UserInformation;
 import com.Sport.repository.ActivityRepository;
 import com.Sport.repository.UserRepository;
@@ -10,12 +11,12 @@ import io.github.cdimascio.dotenv.Dotenv;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.swing.*;
 import java.sql.Date;
 
 public class Main {
     private static Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
-        String connectionString = "";
         Dotenv dotenv = null;
         dotenv = Dotenv.configure().load();
 
@@ -33,6 +34,9 @@ public class Main {
             System.out.println(user);
 //            userRepository.Delete(user);
 //            user = userRepository.GetUserInformation();
+
+
         }
     }
+    JFrame frame = new FenetreAccueil();
 }
